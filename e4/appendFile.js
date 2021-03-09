@@ -8,13 +8,13 @@ http.createServer((req, res) => {
     // If you didn't locate your file's directory it'll create it in root of your app directory!
 
     // this appends text to end of file
-    fs.appendFile('fsAppendtoJson.json', '{"hello":"world"}', (err) => {
+    fs.appendFile(__dirname + '/fsAppendtoJson.json', '{"hello":"world"}', (err) => {
         if (err) throw err;
         console.log('Saved!');
     });
 
     // this method replaces the specified file and content 
-    fs.writeFile('fsAppendtoJson.json', '{"hello":"world"}', (err) => {
+    fs.writeFile(__dirname + '/fsAppendtoJson.json', '{"hello":"world"}', (err) => {
         if (err) throw err;
         console.log('saved!');
     });
