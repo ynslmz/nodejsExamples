@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/e4/appendFile.js"
+            "program": "${workspaceFolder}/e5/fileupload.js"
         }
     ]
 }
