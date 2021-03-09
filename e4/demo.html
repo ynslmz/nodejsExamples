@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <h1>My Header</h1>
+    <p>My paragraph.</p>
+    <p id="date"></p>
+</body>
+<script>
+    var dateElm = document.getElementById('date');
+    dateElm.innerHTML = Date();
+    (() => {
+        setInterval(() => {
+            dateElm.innerHTML = Date();
+        }, 1000);
+    })();
+</script>
+
+</html>
